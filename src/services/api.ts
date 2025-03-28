@@ -1,5 +1,4 @@
 import axios from "axios";
-import { ReactNode } from "react";
 
 const API_KEY =
   "live_mhPEo03PZChqpg3SqeQJURK4zzXSUtApY7PyAR1TrupPr7B6UU2rW3R0DAnzS5O2";
@@ -21,7 +20,8 @@ export interface CatImage {
 }
 
 export interface Breed {
-  [x: string]: ReactNode;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [x: string]: any;
   id: string;
   name: string;
   description: string;
